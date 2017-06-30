@@ -36,8 +36,14 @@ img{
 }
 .wrapper{
     background-color: #F5FFEB;
-    
+
     /** TODO 1: Center the site on the screen and style it to match the mockup **/
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 15px;
 }
 
 /*************************/
@@ -55,18 +61,29 @@ flex containers to make their children flex items
 #site_header{
     background-color: #262425;
     padding: 20px;
-
     /* #site_header styles here */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 15px 15px 0 0;
 }
 #logo{
     /* #logo styles here */
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
 }
 #main_nav{
     /* #main_nav styles here */
+    margin-top: 10px;
 }
 #main_nav a{
     background-color: #E57727;
     /* #navigation button styles here */
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
 }
 #main_nav a:hover{
     background-color: #BA3610;
@@ -78,11 +95,15 @@ flex containers to make their children flex items
 #call_to_action{
     background-color: #BA3610;
     padding: 20px;
-
     /* parent styles here */
+    display: flex;
+    flex-direction: row;
 }
 #call_to_action div{
     /* text column styles here */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 #call_to_action div:first-child{
     /* image column styles here */
@@ -90,17 +111,18 @@ flex containers to make their children flex items
 #call_to_action h1, #call_to_action p{
     color: white;
 }
-#call_to_action a{   
+#call_to_action a{
     background-color: #E57727;
     display: inline-block;
     padding: 12px 18px;
     text-decoration: none;
     color: white;
     border-radius: 5px;
+    margin-top: 2em;
 }
 #call_to_action a:hover{
     background-color: #278A96;
-} 
+}
 
 /***************************/
 /**** FEATURED STYLES ******/
@@ -122,11 +144,14 @@ flex containers to make their children flex items
     list-style: none;
     padding: 0;
     margin: 0;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     /* flexible parent styles here */
 }
 #featured_products li{
     /* list item styles here */
+    width: 30%;
 }
 #featured_products li img{
     border-radius: 4px;
